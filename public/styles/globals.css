@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px auto;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+:root {
+    /* Colors */
+    --primary-color: #ffc701;
+    --secondary-color: #000000;
+    --tertiary-color: #fff5ee;
+    
+    /* Sizes */
+    --page-width: 75%;
+    --page-img-min-size: 60px;
+    --page-img-max-size: 300px;
+    
+    /* Transitions */
+    
+    --slow-transition: all .7s ease-in-out;
+    --medium-transition: all .5s ease-in-out;
+    --fast-transition: all .2s ease-in-out;
+
+    /* Effects */
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--tertiary-color);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 540px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, .3)
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, .5)
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
